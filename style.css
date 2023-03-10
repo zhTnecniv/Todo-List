@@ -1,43 +1,187 @@
-.app{
+.app {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  border-radius: 5px;
   width: fit-content;
-  padding:10px;
+  padding: 10px;
   text-align: center;
-  gap:10px;
+  gap: 10px;
   align-items: stretch;
-
 }
 
-html{
+html {
   display: flex;
   justify-content: center;
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: row;
-  gap:10px;
+  gap: 10px;
+  justify-content: center;
 }
 
-.todo-list{
-  padding:0;
+.submit-btn {
+  background-color: #008cba;
+  color: white;
+  padding-top: 0.3em;
+  padding-bottom: 0.2em;
+  border: none;
+  border-radius: 3px;
+}
+
+.input {
+  border: 1px solid rgb(195, 195, 195);
+  border-radius: 3px;
+  height: 23px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#lists-container {
+  display: flex;
+  gap: 1em;
+}
+
+.list-container {
+  border: 1px solid rgb(197, 195, 195);
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+.list-title {
+  text-align: left;
+  font-weight: bold;
+}
+
+.pending-list {
+  padding: 0;
   margin: 0;
+  margin-top: 0.5em;
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  gap:10px;
+  gap: 10px;
 }
 
-.todo-list li{
+.pending-list li {
   display: flex;
   justify-content: space-between;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  background-color: #e6e2d3;
+  padding: 0.5em;
+  border-radius: 5px;
 }
-.todo-list li span{
+
+.pending-list li span {
   flex-grow: 1;
   text-align: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.pending-list li input {
+  flex-grow: 1;
+  text-align: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+.pending-list li button {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  height: 25px;
+}
+
+.pending-list li button:hover {
+  cursor: pointer;
+}
+
+.completed-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.completed-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  background-color: #e6e2d3;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.completed-list li span {
+  flex-grow: 1;
+  text-align: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.completed-list li input {
+  flex-grow: 1;
+  text-align: center;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+.completed-list li button {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  height: 25px;
+}
+
+.completed-list li button:hover {
+  cursor: pointer;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+.start-edit-btn {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.save-edit-btn {
+  background-color: #008cba;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.delete-btn {
+  background-color: #c94c4c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.status-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}

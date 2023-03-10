@@ -1,8 +1,24 @@
 {
   "todos": [
     {
-      "content": "sdsd",
-      "id": 1
+      "content": "water plants and flowers and trees",
+      "status": "pending",
+      "id": 2
+    },
+    {
+      "content": "say hello",
+      "status": "completed",
+      "id": 8,
+      "method": "PATCH",
+      "body": "{\"content\":\"say hello\"}",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    },
+    {
+      "content": "make smoothies for kids",
+      "status": "completed",
+      "id": 11
     }
   ]
 }
